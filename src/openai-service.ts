@@ -151,7 +151,7 @@ For the startDateISO and endDateISO fields:
 
       // Call OpenAI API
       const response = await this.openai.chat.completions.create({
-        model: 'gpt-4o',
+        model: 'gpt-5.4-nano',
         messages: [
           { role: 'system', content: 'You are a helpful assistant that analyzes WhatsApp messages to detect events and extract structured details. For Hebrew content, provide Hebrew output for summary, title, and location. You are also skilled at converting dates and times to ISO format.' },
           { role: 'user', content: prompt }
